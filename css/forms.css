@@ -45,7 +45,8 @@ iframe{
 	border: 1px solid black;
 	border-radius: 10px;
 	margin-top:1.5rem;
-
+	height: 6rem;
+	width: 4rem;
 }
 
 legend{
