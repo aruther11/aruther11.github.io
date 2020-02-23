@@ -1,6 +1,6 @@
 body{
-    margin: 0 initial;
-    padding: 0 initial;
+    margin: 0 0;
+    padding: 0 0;
     display:flex;
     flex-direction: column;
     text-align: center;
@@ -410,6 +410,7 @@ li{
 
     width: 700px;
     padding: 0 10px 0 20px;
+    padding-right: calc(1rem + (250 - 0) * ((100vw - 300px) / (1600 - 300)));
     border-left: 1px solid #b84b14;
     flex: 2;
     margin: 0 1%;
@@ -490,13 +491,16 @@ li{
 
 .projectarticle{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex-basis: 50%;
     margin-top: 2rem;
     margin-bottom: 3rem;
     padding: 0;
 }
 .sub-words{
         margin-left: 1rem;
+        max-width: 50%;
 }
 .art-pics{
     border-radius: 10%;
